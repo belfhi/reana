@@ -1,5 +1,7 @@
+{{- if .Values.cvmfs.enabled }}
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: {{ include "reana.prefix" . }}-cvmfs
 provisioner: cvmfs.csi.cern.ch
+{{- end }}

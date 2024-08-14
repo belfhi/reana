@@ -181,3 +181,6 @@ quota:
   # backward compatibility
   disk_update: "0 3 * * *"  # everyday at 3am
   termination_update_policy: ""
+
+cvmfs:
+  enabled: true
